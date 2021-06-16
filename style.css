@@ -2,6 +2,10 @@
 	font-family: Bebas-Neue;
 	src: url(./Fonts/BebasNeue-Regular.ttf)
 }
+@font-face {
+    font-family: peaky-blinders;
+    src: url(./Fonts/Alycidon-Condensed.otf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +16,7 @@ body{
     font-family: Bebas-Neue, 'sans-serif';
     background-image: url(./imgs/fotoPeakyBlinders.jpg);
     background-repeat: no-repeat;
+    background-color: rgba(20, 20, 20);
     background-size: 100%;
 }
 /* header */
@@ -23,47 +28,147 @@ header{
     width: 100vw;
     color: white;
     padding-top: 3px;
+    z-index: 999;
 }
 header .logo{
-    height: 62px;
-    margin-left: 3rem;
+    height: 65px;
+    margin-left: 3.15rem;
+    padding-bottom: 3px;
+    margin-right: 5px;
 }
 
 
 header nav{
     display: flex;
     margin-left: 2rem;
-    margin-top: 5px;
 }
 header nav div{
     margin-right: 23px;
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-weight: 100;
+    letter-spacing: 2.8px;
 }
 
 .navegation{
     display: flex;
     align-items: center;
-    margin: 2px 6rem 0 auto;
+    margin: 0 6rem 0 auto;
     height: 111px;
     height: 42px;
 }
 
 
 header .search{
-    width: 30px;
+    height: 25px;
     margin-right: 20px;
 }
 header .navegation div{
     margin-right: 20px;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
+    letter-spacing: 2px;
     font-weight: 100;
 }
 header .sino{
-    width: 20px;
+    height: 22px;
     margin-right: 20px;
 }
 header .iconPerfil{
     height: 32px;
-    border-radius: .3rem;
+    border-radius: 4px;
+}
+
+/* Main */
+
+/* main{
+    display: flex;
+    flex-direction: column;
+} */
+.presentation{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    top: 26vh;
+    color: white;
+    margin-left: 3.71rem;
+}
+.presentation p{
+    display: flex;
+    font-weight: 100;
+    font-size: 20px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.iconN{
+    height: 35px;
+    margin-right: -3px;
+}
+.subTitle{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+.peakyBlinders{
+    font-family: 'peaky-blinders';
+    font-size: 120px;
+}
+.description{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.assistir{
+    width: 160px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+}
+.assistir:hover{
+    opacity: 0.8;
+}
+.information{
+    width: 200px;
+    border-radius: 4px;
+    height: 45px;
+    margin-left: 13px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.712);
+}
+.information:hover{
+    background-color: rgba(128, 128, 128, 0.512);
+}
+
+/* cards */
+.cards{
+    color: white;
+    position: relative;
+    z-index: 1;
+    top: 33vh;
+    margin: 0 3.71rem;
+}
+.cards h1{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.cards div{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
