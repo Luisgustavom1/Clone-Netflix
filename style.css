@@ -105,7 +105,7 @@ header .iconPerfil{
     margin-right: -3px;
 }
 .subTitle{
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 10px;
     margin-left: 90px;
 }
@@ -160,6 +160,7 @@ header .iconPerfil{
     z-index: 1;
     top: 33vh;
     margin: 0 3.71rem;
+    width: 100vw;
 }
 .cards h1{
     font-size: 25px;
@@ -167,8 +168,30 @@ header .iconPerfil{
     margin-bottom: 8px;
 }
 
-.cards div{
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.items{
+    display: flex;
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    /* no elemento pai, scroll-snap-type: [eixo] [obrigadoriedade]*/
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
+
+.items .card{
+    width: 18%;
+    flex: none;
+
+    scroll-snap-align: start;
+    /* pra onde vai estabilizar */
+
+    border: 1px solid red;
+}
+.items .card.card1{
+    background-color: green;
+}
+
+/* .card img{
+    width: 100%;
+    height: 100%;
+} */
