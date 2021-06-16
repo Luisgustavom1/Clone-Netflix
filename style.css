@@ -24,11 +24,11 @@ header{
     position: fixed;
     display: flex;
     align-items: center;
-    background-color: rgba(20, 20, 20);
     width: 100vw;
     color: white;
     padding-top: 3px;
     z-index: 999;
+    transition: 500ms;
 }
 header .logo{
     height: 65px;
@@ -78,11 +78,6 @@ header .iconPerfil{
 }
 
 /* Main */
-
-/* main{
-    display: flex;
-    flex-direction: column;
-} */
 .presentation{
     height: 400px;
     display: flex;
@@ -206,7 +201,7 @@ header .iconPerfil{
 
 .items{
     display: flex;
-    /* overflow-x: auto; */
+    overflow-x: hidden;
 
     scroll-snap-type: x mandatory;
     /* no elemento pai, scroll-snap-type: [eixo] [obrigadoriedade]*/
