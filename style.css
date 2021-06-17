@@ -84,7 +84,7 @@ header .iconPerfil{
     flex-direction: column;
     position: relative;
     z-index: 1;
-    top: 26vh;
+    top: 30vh;
     color: white;
     margin-left: 3.71rem;
 }
@@ -158,7 +158,7 @@ header .iconPerfil{
     width: 100vw;
 }
 .cards h1{
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 400;
     margin-bottom: 8px;
 }
@@ -184,7 +184,7 @@ header .iconPerfil{
     background-color: rgba(20, 20, 20, 0.5);
     position: absolute;
     right: 2rem;
-    top: 38px;
+    top: 33px;
     width: 100px;
     height: 573px;
 }
@@ -198,7 +198,46 @@ header .iconPerfil{
     opacity: 1;
 }
 
+/* arrows card peq */
+#arrowLeftPeq{
+    position: relative;
+    width: 3.71rem;
+    left: -3.71rem;
+    height: 134.5px;
 
+    background-color: rgba(20, 20, 20, 0.5);
+}
+#arrowLeftPeq img{
+    width: 50px;
+    opacity: 0; 
+    padding: 49px 0;
+}
+#arrowLeftPeq img:hover{ 
+    opacity: 1; 
+}
+
+#arrowRightPeq{
+    background-color: rgba(20, 20, 20, 0.5);
+    position: relative;
+    transform: translateY(-200%);
+    
+    left: 91.6%;
+
+
+    width: 3.71rem;
+    height: 134.5px;
+}
+#arrowRightPeq img{
+    width: 50px;
+
+    padding: 49px 0;
+    opacity: 0;
+}
+#arrowRightPeq img:hover{
+    opacity: 1;
+}
+
+/* cards grandes */
 .items{
     display: flex;
     overflow-x: hidden;
@@ -230,33 +269,35 @@ header .iconPerfil{
     width: 100vw;
     margin-left: 3.71rem;
     color: white;
+    position: relative;
+    height: 180px;
 }
 .serie{
     margin-top: 310px;
 }
 .assistirNovamente{
-    margin: 65px 3.71rem;
+    margin: 60px 3.71rem;
 }
 .serie h1, .assistirNovamente h1{
-    font-size: 25px;
+    font-size: 19px;
     font-weight: 400;
     margin-bottom: 8px;
 }
 
-
 .cardsPeq{
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
+
+    transform: translateY(-100%);
 
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
 
-
 .cardPeq{
-    width: 287px;
-    height: 162px;
+    width: 229px;
+
     margin-right: 6px;
     flex: none;
 
